@@ -17,6 +17,7 @@ pipeline {
         stage('Package') {
             steps {
                 bat 'mvn package'
+                bat 'exit /b 1'
             }
         }
     }
